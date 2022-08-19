@@ -1,0 +1,133 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 95%;
+    margin: auto;
+}
+
+/* ----------------- */
+/* header style */
+#main-header{
+    text-align: center;
+}
+#ul-nav{
+    display: flex;
+    flex-direction: row;
+}
+#ul-nav li{
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* ------------------------ */
+/* style for main */
+main{
+    display: flex;
+}
+#side-bar{
+    width: 30%;
+    text-align: center;
+    background: rgb(255, 123, 0);
+    padding-top: 10px;
+    box-shadow: 9px 0px 12px 0px rgba(0, 0, 0, 0.459);
+    z-index: 10;
+}
+#main-container{
+    width: 70%;
+    background-color: burlywood;
+}
+#side-bar figure{
+    width: 95%;
+    margin: auto;
+}
+#side-bar img, #side-bar figcaption{
+    width: 100%;
+}
+#side-bar figcaption{
+    font-size: 12px;
+}
+
+/* -------------------------- */
+/* main section */
+#main-container h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article-para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-indent: 15px;
+    text-align: justify;
+    padding: 5px 30px;
+}
+#summary{
+    font-size: 12px;
+    text-decoration: underline;
+}
+#summary:hover{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+details p{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-indent: 15px;
+    padding: 5px 15px;
+    font-style: italic;
+    line-height: 20px;
+}
+
+/* ----------------------------------- */
+/* links section */
+#links-section{
+    display: flex;
+    background-color: cyan;
+}
+#links-section div{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+#links-section li{
+    list-style-type: square;
+}
+
+/* ------------------------- */
+/* footer style */
+footer{
+    background-image: url('./images/footer-background.jpg');
+    text-align: center;
+}
+footer ul{
+    display: flex;
+}
+footer li{
+    list-style-type: none;
+    flex-grow: 1;
+}
+footer>ul>li>a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    display: inline-block; /* because of applying the margin or padding */
+    
+}
+footer>ul>li>a:hover{
+    color: tomato;
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: rgba(255, 252, 67, 0.9);
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+footer span{
+    color: yellow;
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+}
